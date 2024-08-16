@@ -21,7 +21,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  font-family: "Cutive Mono", monospace;
+  font-family: Cutive Mono, Courier New, Consolas, monospace !important;
   font-size: 4vmin;
   line-height: 4.1vmin;
   font-weight: normal; }
