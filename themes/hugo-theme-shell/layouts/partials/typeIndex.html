@@ -1,11 +1,11 @@
 <span id="ps1_01"></span> <span id="cd"></span> <br>
 <span id="ps1_02"></span> <span id="cat"></span> <br>
 <span id="std_out_01"></span> <br>
-<!--
+<div style="display: none;">
 <span id="ps1_03"></span> <span id="tree"></span> <br>
 <span id="std_out_02"></span> <br>
 <span id="ps1_04"></span>
--->
+</div>
 <script type="text/javascript">
     async function typewriter(text, elementId, waitAfter) {
         var n = 0,
@@ -41,7 +41,7 @@
 
             n++;
         }
-        el.style.setProperty("--cursor-visibility", "collapse");
+        //el.style.setProperty("--cursor-visibility", "collapse");
     }
 
     function parseDelay(d) {
@@ -62,6 +62,10 @@
         await typewriter("{{ .envWithDir }}", "ps1_04", ps1Delay);
         return;
     }
+
+    setTimeout(function () {
+        window.location.href = "/";
+    }, 8000);
 
     typeeffetct()
 </script>
